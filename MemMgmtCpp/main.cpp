@@ -47,9 +47,29 @@ void String() {
     p = nullptr;
 }
 
+void TwoD() {
+    auto *row1 = new int[3];
+    auto *row2 = new int[3];
+
+    auto **arrTwoD = new int *[2];
+    arrTwoD[0] = row1;
+    arrTwoD[1] = row2;
+
+    arrTwoD[0][1] = 2;
+
+    delete[]row1;
+    delete[]row2;
+    delete[]arrTwoD;
+}
+
 int main() {
     New();
     NewArray();
     String();
+    int data[2][3] = {
+            1, 2, 3,
+            4, 5, 6
+    }; // 1, 2, 3, 4, 5, 6
+    //data [0][1] is 2
     return 0;
 }
