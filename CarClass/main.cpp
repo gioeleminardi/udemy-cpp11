@@ -1,7 +1,7 @@
 #include "Car.h"
 
 int main() {
-    Car car;
+    Car car(5);
 //    car.FillFuel(6);
     car.AddPassengers(5);
     car.Accelerate();
