@@ -27,11 +27,16 @@ void Car::Brake() {
     speed = 0;
 }
 
-void Car::AddPassengers(int count) {
-    passengers = count;
+//void Foo(const Car &car){
+//
+//}
+
+void Car::AddPassengers(int passengers) {
+    this->passengers = passengers;
+//    Foo(*this);
 }
 
-void Car::Dashboard() {
+void Car::Dashboard()const {
     std::cout << "Fuel: " << fuel << " Speed: " << speed << " Passengers: " << passengers << std::endl;
 }
 
