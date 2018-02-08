@@ -5,11 +5,15 @@
 #include <iostream>
 #include "Car.h"
 
+int Car::totalCars = 0;
+
 Car::Car() {
+    totalCars++;
     std::cout << "Car()" << std::endl;
 }
 
 Car::Car(float amount) {
+    totalCars++;
     fuel = amount;
 }
 
@@ -36,11 +40,13 @@ void Car::AddPassengers(int passengers) {
 //    Foo(*this);
 }
 
-void Car::Dashboard()const {
-    std::cout << "Fuel: " << fuel << " Speed: " << speed << " Passengers: " << passengers << std::endl;
+void Car::Dashboard() const {
+    std::cout << "Fuel: " << fuel << " Speed: " << speed << " Passengers: " << passengers << " TotalCars: " << totalCars
+              << std::endl;
 }
 
 Car::~Car() {
     std::cout << "~Car()" << std::endl;
+    totalCars--;
 }
 

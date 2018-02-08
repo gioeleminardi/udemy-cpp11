@@ -2,7 +2,8 @@
 
 int main() {
 //    Car car(5);
-    const Car car(6);
+    Car car1;
+    const Car car2;
 //    car.FillFue(6);
 //    car.AddPassengers(5);
 //    car.Accelerate();
@@ -11,6 +12,7 @@ int main() {
 //    car.Accelerate();
 //    car.Accelerate();
 //    car.Brake();
-    car.Dashboard();
+    car1.Dashboard();
+    car2.Dashboard();
     return 0;
 }
