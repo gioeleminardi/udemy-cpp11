@@ -10,6 +10,8 @@ public:
     Integer(int value) {
         m_Value = value;
     }
+    // Copy Ctor REDUNDANT
+    Integer(const Integer &) = default;
 };
 
 int main() {
