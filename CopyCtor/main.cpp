@@ -43,17 +43,22 @@ int main() {
 //        Integer a(1), c(2);
 //        auto b(std::move(a));
 //        Process(std::move(c));
-    Integer a(3), b(7);
-    Integer sum = a + b;
-    ++sum;
-    sum++;
-    std::cout << (sum++).GetValue() << std::endl;
-    if (a == b) {
-
-        std::cout << "a == b" << std::endl;
-    } else {
-
-        std::cout << "a != b" << std::endl;
-    }
+//    Integer a(3), b(7);
+//    Integer sum = a + b;
+//    ++sum;
+//    sum++;
+//    std::cout << (sum++).GetValue() << std::endl;
+//    if (a == b) {
+//
+//        std::cout << "a == b" << std::endl;
+//    } else {
+//
+//        std::cout << "a != b" << std::endl;
+//    }
+    Integer a(3);
+    Integer c;
+    a = a;
+    a = 10;
+    std::cout << a.GetValue() << std::endl;
     return 0;
 }

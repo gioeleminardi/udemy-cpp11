@@ -35,7 +35,13 @@ public:
     Integer operator++(int);
 
     //Comparison operator
-    bool operator ==(const Integer &obj)const;
+    bool operator==(const Integer &obj) const;
+
+    //Assign operator
+    Integer &operator=(const Integer &obj);
+    //Assign operator Move Semantics
+    Integer &operator=(Integer &&obj);
+
 
 
 };

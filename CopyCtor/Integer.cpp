@@ -54,6 +54,22 @@ bool Integer::operator==(const Integer &obj) const {
     return *m_pInt == *obj.m_pInt;
 }
 
+Integer &Integer::operator=(const Integer &obj) {
+    if (this != &obj) {
+        delete m_pInt;
+        m_pInt = new int(*obj.m_pInt);
+    }
+    return *this;
+}
+
+Integer &Integer::operator=(Integer &&obj) {
+    if (this != &obj) {
+        delete m_pInt;
+        m_pInt = obj.m_pInt;
+        obj.m_pInt = nullptr;
+    }
+    return *this;
+}
 //Integer Integer::operator+(const Integer &a) const {
 //    Integer temp;
 //    *temp.m_pInt = *m_pInt + *a.m_pInt;
