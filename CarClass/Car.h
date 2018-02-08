@@ -15,7 +15,9 @@ private:
 public:
     Car();
 
-    Car(float amount);
+    Car(float fuelAmount);
+
+    Car(float fuelAmount, int passengers);
 
     ~Car();
 
@@ -27,7 +29,7 @@ public:
 
     void AddPassengers(int count);
 
-    void Dashboard()const;
+    void Dashboard() const;
 
     static void ShowCount();
 };
