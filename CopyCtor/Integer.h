@@ -46,6 +46,7 @@ public:
     Integer &operator=(Integer &&obj);
 
     void operator()();
+    explicit operator int();
 
     friend std::istream &operator>>(std::istream &in, Integer &a);
 

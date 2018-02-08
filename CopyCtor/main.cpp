@@ -95,5 +95,7 @@ int main() {
 
     sum1();
 
+    int x = static_cast<int>(sum1);
+
     return 0;
 }
