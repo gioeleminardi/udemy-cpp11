@@ -26,6 +26,18 @@ public:
 
     ~Integer();
 
+//    Integer operator +(const Integer & a) const;
+
+    //Pre increment operator
+    Integer &operator++();
+
+    //Post increment operator
+    Integer operator++(int);
+
+    //Comparison operator
+    bool operator ==(const Integer &obj)const;
+
+
 };
 
 

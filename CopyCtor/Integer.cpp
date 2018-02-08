@@ -39,4 +39,25 @@ Integer::~Integer() {
     delete m_pInt;
 }
 
+Integer &Integer::operator++() {
+    ++(*m_pInt);
+    return *this;
+}
+
+Integer Integer::operator++(int) {
+    Integer temp(*this);
+    ++(*m_pInt);
+    return temp;
+}
+
+bool Integer::operator==(const Integer &obj) const {
+    return *m_pInt == *obj.m_pInt;
+}
+
+//Integer Integer::operator+(const Integer &a) const {
+//    Integer temp;
+//    *temp.m_pInt = *m_pInt + *a.m_pInt;
+//    return temp;
+//}
+
 
