@@ -19,9 +19,6 @@ public:
     }
 };
 
-
-
-
 ////Smart Shared Ptr C++11
 void Process(std::shared_ptr<Integer> ptr) {
     std::cout << ptr->GetValue() << std::endl;
