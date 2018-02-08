@@ -6,6 +6,8 @@
 #define COPYCTOR_INTEGER_H
 
 
+#include <iostream>
+
 class Integer {
 private:
     int *m_pInt;
@@ -44,7 +46,10 @@ public:
     Integer &operator=(Integer &&obj);
 
     void operator()();
-};
+
+    friend std::istream &operator>>(std::istream &in, Integer &a);
+
+    };
 
 
 #endif //COPYCTOR_INTEGER_H

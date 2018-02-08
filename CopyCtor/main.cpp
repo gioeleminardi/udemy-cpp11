@@ -31,10 +31,17 @@ std::ostream &operator<<(std::ostream &out, const Integer &a) {
     return out;
 }
 
+//std::istream &operator>>(std::istream &in, Integer &a){
+//    int x;
+//    in >> x;
+//    a.SetValue(x);
+//    return in;
+//}
+
 std::istream &operator>>(std::istream &in, Integer &a){
     int x;
     in >> x;
-    a.SetValue(x);
+    *a.m_pInt = x;
     return in;
 }
 
