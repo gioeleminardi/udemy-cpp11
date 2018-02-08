@@ -7,9 +7,10 @@
 
 Car::Car() {
     std::cout << "Car()" << std::endl;
-    fuel = 0;
-    passengers = 0;
-    speed = 0;
+}
+
+Car::Car(float amount) {
+    fuel = amount;
 }
 
 void Car::FillFuel(float amount) {
@@ -21,11 +22,6 @@ void Car::Accelerate() {
     fuel -= 0.5f;
 }
 
-Car::Car(float amount) {
-    fuel = amount;
-    passengers = 0;
-    speed = 0;
-}
 
 void Car::Brake() {
     speed = 0;
