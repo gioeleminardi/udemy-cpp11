@@ -26,7 +26,7 @@ public:
 
     ~Integer();
 
-//    Integer operator +(const Integer & a) const;
+    Integer operator+(const Integer &a) const;
 
     //Pre increment operator
     Integer &operator++();
@@ -39,9 +39,9 @@ public:
 
     //Assign operator
     Integer &operator=(const Integer &obj);
+
     //Assign operator Move Semantics
     Integer &operator=(Integer &&obj);
-
 
 
 };

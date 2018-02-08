@@ -14,10 +14,15 @@
 //    temp.SetValue(a.GetValue() + b.GetValue());
 //    return temp;
 //}
-
-Integer operator+(const Integer &a, const Integer &b) {
+//
+//Integer operator+(const Integer &a, const Integer &b) {
+//    Integer temp;
+//    temp.SetValue(a.GetValue() + b.GetValue());
+//    return temp;
+//}
+ Integer operator+(int x, const Integer &b) {
     Integer temp;
-    temp.SetValue(a.GetValue() + b.GetValue());
+    temp.SetValue(x + b.GetValue());
     return temp;
 }
 
@@ -55,10 +60,18 @@ int main() {
 //
 //        std::cout << "a != b" << std::endl;
 //    }
-    Integer a(3);
-    Integer c;
-    a = a;
-    a = 10;
-    std::cout << a.GetValue() << std::endl;
+//    Integer a(3);
+//    Integer c;
+//    a = a;
+//    a = 10;
+//    std::cout << a.GetValue() << std::endl;
+
+    Integer a(1), b(3);
+    Integer sum1 = a + 5;
+    Integer sum2 = 5 + a;
+
+    std::cout << sum1 << std::endl;
+
+
     return 0;
 }
