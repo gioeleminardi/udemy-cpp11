@@ -76,4 +76,8 @@ Integer Integer::operator+(const Integer &a) const {
     return temp;
 }
 
+void Integer::operator()() {
+    std::cout << *m_pInt << std::endl;
+}
+
 

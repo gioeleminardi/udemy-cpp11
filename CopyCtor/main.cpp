@@ -20,10 +20,22 @@
 //    temp.SetValue(a.GetValue() + b.GetValue());
 //    return temp;
 //}
- Integer operator+(int x, const Integer &b) {
+Integer operator+(int x, const Integer &b) {
     Integer temp;
     temp.SetValue(x + b.GetValue());
     return temp;
+}
+
+std::ostream &operator<<(std::ostream &out, const Integer &a) {
+    out << a.GetValue();
+    return out;
+}
+
+std::istream &operator>>(std::istream &in, Integer &a){
+    int x;
+    in >> x;
+    a.SetValue(x);
+    return in;
 }
 
 //void Process(Integer val) {
@@ -71,7 +83,10 @@ int main() {
     Integer sum2 = 5 + a;
 
     std::cout << sum1 << std::endl;
+    std::cin >> sum2;
+    std::cout << sum2 << std::endl;
 
+    sum1();
 
     return 0;
 }

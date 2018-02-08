@@ -43,7 +43,7 @@ public:
     //Assign operator Move Semantics
     Integer &operator=(Integer &&obj);
 
-
+    void operator()();
 };
 
 
