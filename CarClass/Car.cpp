@@ -7,17 +7,9 @@
 
 int Car::totalCars = 0;
 
-Car::Car() {
-    std::cout << "Car()" << std::endl;
-    ++totalCars;
-}
+Car::Car() : Car(0) {}
 
-Car::Car(float fuelAmount) {
-    ++totalCars;
-    fuel = fuelAmount;
-    speed = 0;
-    passengers = 0;
-}
+Car::Car(float fuelAmount) : Car(fuelAmount, 0) {}
 
 Car::Car(float fuelAmount, int passengers) {
     ++totalCars;

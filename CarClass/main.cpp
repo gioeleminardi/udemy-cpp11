@@ -4,7 +4,7 @@ int main() {
 //    Car car(5);
     Car car1;
     const Car car2;
-//    car.FillFue(6);
+//    car1.FillFuel(6);
 //    car.AddPassengers(5);
 //    car.Accelerate();
 //    car.Accelerate();
