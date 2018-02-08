@@ -14,14 +14,17 @@ public:
 
     Integer(int value);
 
-    // Copy Constructor
+    //Copy Constructor
     Integer(const Integer &obj);
+
+    //Move Constructor
+    Integer(Integer &&obj);
 
     int GetValue() const;
 
     void SetValue(int value);
 
-    virtual ~Integer();
+    ~Integer();
 
 };
 
