@@ -14,5 +14,6 @@ int main() {
 //    car.Brake();
     car1.Dashboard();
     car2.Dashboard();
+    Car::ShowCount();
     return 0;
 }

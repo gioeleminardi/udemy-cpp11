@@ -50,3 +50,7 @@ Car::~Car() {
     totalCars--;
 }
 
+void Car::ShowCount() {
+    std::cout << "TotalCars: " << totalCars << std::endl;
+}
+

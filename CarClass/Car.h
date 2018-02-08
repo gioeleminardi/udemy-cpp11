@@ -28,6 +28,8 @@ public:
     void AddPassengers(int count);
 
     void Dashboard()const;
+
+    static void ShowCount();
 };
 
 
