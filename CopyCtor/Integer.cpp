@@ -23,3 +23,9 @@ void Integer::SetValue(int value) {
 Integer::~Integer() {
     delete m_pInt;
 }
+
+Integer::Integer(const Integer &obj) {
+
+    m_pInt = new int(*obj.m_pInt);
+
+}

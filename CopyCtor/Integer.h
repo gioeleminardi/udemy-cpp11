@@ -14,6 +14,9 @@ public:
 
     Integer(int value);
 
+    // Copy Constructor
+    Integer(const Integer &obj);
+
     int GetValue() const;
 
     void SetValue(int value);
