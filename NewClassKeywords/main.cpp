@@ -1,11 +1,12 @@
 #include <iostream>
 
 class Integer {
-    int m_Value;
+    int m_Value{0};
 public:
-    Integer() {
-        m_Value = 0;
-    }
+    Integer() = default;
+//    Integer() {
+//        m_Value = 0;
+//    }
     Integer(int value) {
         m_Value = value;
     }
