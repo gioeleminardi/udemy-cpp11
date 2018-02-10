@@ -1,5 +1,6 @@
 #include <iostream>
 //#include <cstring>
+#include <string>
 
 const char *Combine(const char *pFirst, const char *pLast) {
     auto *fullname = new char[strlen(pFirst) + strlen(pLast) + 1];
@@ -17,5 +18,21 @@ int main() {
     const char *pFullName = Combine(first, last);
     std::cout << pFullName << std::endl;
     delete[] pFullName;
+
+    //Init & assign
+    std::string s = "Hello";
+    //Access
+
+    //Size
+
+    //Insert & Concat
+
+    //Comparison
+
+    //Removal
+
+    //Search
+
+
     return 0;
 }
