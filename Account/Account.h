@@ -26,9 +26,9 @@ public:
 
     int getAccNo() const;
 
-    virtual void Withdraw(float amount);
     void Deposit(float amount);
 
+    virtual void Withdraw(float amount);
     virtual void AccumulateInterest();
     virtual float GetInterestRate()const;
 };
