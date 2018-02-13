@@ -10,7 +10,8 @@
 
 class Checking: public Account {
 public:
-    Checking(const std::string &name, float balance);
+    using Account::Account;
+//    Checking(const std::string &name, float balance);
 
     ~Checking() override;
 
