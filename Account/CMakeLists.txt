@@ -3,4 +3,4 @@ project(Account)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Account main.cpp Account.cpp Account.h Savings.cpp Savings.h)
+add_executable(Account main.cpp Account.cpp Account.h Savings.cpp Savings.h Checking.cpp Checking.h)

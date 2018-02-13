@@ -38,3 +38,11 @@ void Account::Withdraw(float amount) {
 void Account::Deposit(float amount) {
     m_Balance += amount;
 }
+
+void Account::AccumulateInterest() {
+
+}
+
+float Account::GetInterestRate() const {
+    return 0;
+}

@@ -8,12 +8,12 @@
 
 #include "Account.h"
 
-class Savings: public Account {
+class Savings : public Account {
     float m_Rate;
 public:
     Savings(const std::string &name, float balance, float m_Rate);
 
-    virtual ~Savings();
+    ~Savings() override;
 
     void AccumulateInterest() override;
 
