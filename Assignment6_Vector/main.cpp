@@ -43,7 +43,7 @@ Find(
 std::vector<int>
 FindAll(
         const std::string &target,         //Target string to be searched
-        const std::string search_string,         //The string to search for
+        const std::string &search_string,         //The string to search for
         Case searchCase = Case::INSENSITIVE,//Choose case sensitive/insensitive search
         size_t offset = 0) {                //Start the search from this offset
     //Implementation
