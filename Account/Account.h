@@ -18,8 +18,6 @@ protected:
 public:
     Account(const std::string &name, float balance);
 
-    virtual ~Account();
-
     const std::string &getName() const;
 
     float getBalance() const;
@@ -28,9 +26,13 @@ public:
 
     void Deposit(float amount);
 
+    virtual ~Account();
+
     virtual void Withdraw(float amount);
+
     virtual void AccumulateInterest();
-    virtual float GetInterestRate()const;
+
+    virtual float GetInterestRate() const;
 };
 
 
