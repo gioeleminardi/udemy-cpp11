@@ -9,7 +9,7 @@
 #include "Account.h"
 #include <iostream>
 
-void Transaction(Account *pAccount);
+void Transact(Account *pAccount);
 
 
 #endif //ACCOUNT_TRANSACTION_H
