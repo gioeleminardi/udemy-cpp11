@@ -33,8 +33,10 @@ int Account::getAccNo() const {
 void Account::Withdraw(float amount) {
     if (amount <= m_Balance)
         m_Balance -= amount;
-    else
-        std::cout << "No money!" << std::endl;
+    else {
+        throw std::out_of_range("No enough money.");
+    }
+
 }
 
 void Account::Deposit(float amount) {

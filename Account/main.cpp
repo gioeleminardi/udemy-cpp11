@@ -9,6 +9,7 @@
 
 int main() {
     Savings acc("Bob", 100, 0.5f);
+    acc.Withdraw(5000);
     Account *pAcc = &acc;
     Transact(&acc);
 

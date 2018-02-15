@@ -19,7 +19,7 @@ void Checking::Withdraw(float amount) {
     if ((m_Balance - amount) >= m_MinimumBalance) {
         Account::Withdraw(amount);
     } else {
-        std::cout << "Balance will go below 50" << std::endl;
+        throw std::out_of_range("Balance will go below 50");
     }
 }
 
